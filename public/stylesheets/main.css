@@ -1,0 +1,58 @@
+
+
+body {
+  margin: 0px !important;
+  overflow:hidden;
+}
+
+#header {
+  height: 70px;
+  background-color:#225A9D;
+}
+
+#header-title {
+  padding-left: 15px;
+  position: relative;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color:white;
+  top:0px;
+  min-width:240px;
+  font-size:30px;
+}
+
+#header-title span  {
+  position: relative;
+  color: white;
+  font-family: 'Goudy Bookletter 1911', serif; 
+  left:10px;
+  font-size:13px;
+  display:block;
+}
+
+
+.eventInfoContainer{
+  position: relative;
+  float: left;
+  width:300px;
+  max-height: 650px;
+}
+
+.eventInfoContainer h1{
+  color: #0047b3;
+  font-size: 20px;
+  padding-left: 15px
+}
+
+.flierContainer {
+  width:70%;
+  position: relative;
+  float: right;
+  margin-right: 50px;
+}
+body div h1 {
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+
+
