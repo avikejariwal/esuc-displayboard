@@ -21,9 +21,9 @@
 
 <body>	
 	<div >
-		<h1>  Upcoming Events</h1>
+		
 		<div class="eventInfoContainer">
-			
+			<h1>  Upcoming Events</h1>
 			<ul>
 				<div class="list-group">
 					<% for (var i = 0; i<events.length; i++) { %>
@@ -39,14 +39,16 @@
 
 		</div>
 		<div class="flierContainer">
-			<div class="your-class">
+			<div class="center">
 				<% for (var i =0 ; i<fliers.length ; i++) {%>
-				<div><img src = <%= fliers[i] %> ></div>
+				<div><img class="flierImg" src = <%= fliers[i] %> ></div>
 				<% } %>
 			</div>
 			
 		</div>
 	</div>
+
+	<div id="footer"></div>
 
 </body>
 </html>

@@ -1,8 +1,7 @@
 
 $(document).ready(function(){
-  $('.your-class').slick({
-  	autoplay: true,
-  	autoplaySpeed: 1000
-
-  });
+  $('.center').slick({
+    autoplay:true,
+    autoplaySpeed: 3000 
+  }); 
 });

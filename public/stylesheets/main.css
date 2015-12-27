@@ -38,8 +38,8 @@ body {
 }
 
 .eventInfoContainer h1{
-  color: #0047b3;
-  font-size: 20px;
+  color: #225A9D;
+  font-size: 30px;
   padding-left: 15px
 }
 
@@ -47,12 +47,19 @@ body {
   width:70%;
   position: relative;
   float: right;
+  padding: 10px;
   margin-right: 50px;
 }
-body div h1 {
-  margin-left: 15px;
-  font-size: 25px;
+
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
 }
+
+
 
 
 
