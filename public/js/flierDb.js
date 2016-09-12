@@ -4,11 +4,15 @@ $(document).ready(function(){
       	full_width: true,
       	time_constant: 500
       });
+
       window.setInterval(function(){
       	nextSlide();
       }, 10000);
     });
 
 function nextSlide(){
-	$('.carousel.carousel-slider').carousel('next');
+	var numFliers = $('#flierCarousel a').length;
+	if (numFliers != 1){
+		$('.carousel.carousel-slider').carousel('next');
+	}	
 }
