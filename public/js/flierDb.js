@@ -1,11 +1,14 @@
 
 $(document).ready(function(){
-  $('.center').slick({
-    autoplay:true,
-    autoplaySpeed: 3000,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-  }); 
-});
+      $('.carousel.carousel-slider').carousel({
+      	full_width: true,
+      	time_constant: 500
+      });
+      window.setInterval(function(){
+      	nextSlide();
+      }, 10000);
+    });
+
+function nextSlide(){
+	$('.carousel.carousel-slider').carousel('next');
+}

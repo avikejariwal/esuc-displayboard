@@ -59,6 +59,42 @@ body {
     margin-top: -3em;
 }
 
+#dbHeader {
+  background-color: #536895;
+  padding-left: 20px;
+  font-weight: 100;
+}
+#navName1 {
+  font-size: xx-large;
+}
+#navName2 {
+  font-size: large;
+}
+#eventInfoTitle{
+  color: #536895;
+}
+.collection-item{
+  font-size: large;
+}
+
+.carousel {
+  margin-top:20px;
+  height: 800px !important;
+}
+#eventTitle{
+  font-size: x-large;
+  font-weight: 500;
+}
+p {
+  font-weight: 200;
+}
+
+.carousel .carousel-item img{
+  width: auto !important;
+  min-height: 700px;
+  max-height: 730px;
+}
+
 
 
 
