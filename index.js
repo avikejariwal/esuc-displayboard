@@ -42,10 +42,10 @@ app.get('/', function(request, response) {
   myFirebaseRef.child('events').on("value", function(allEvents) {
   	allEvents.forEach(function(events){
       var date = events.child('eventDate').val().toString();
-      console.log(date);
-      console.log("Date valid: " +dateCheck(date));
-      console.log("Moderated: " + events.child('moderated').val());
-  		if (events.child('moderated').val() == true && dateCheck(date) == true) {//}  && dateCheck(events.child('eventDate').val()) == true) {
+      //console.log(date);
+      //console.log("Date valid: " +dateCheck(date));
+      //console.log("Moderated: " + events.child('moderated').val());
+  		if (events.child('moderated').val() == true && dateCheck(date) == true) {
         var temp_event = events.val();
         temp_event.dateAndTime = dateString(temp_event.eventDate, temp_event.eventTimeMs);
         //console.log(temp_event.eventName);
@@ -55,8 +55,9 @@ app.get('/', function(request, response) {
         }
   		}
   	});
+    response.render('pages/db', {events: moderated_events, fliers:imageURLS});
   });
-  response.render('pages/db', {events: moderated_events, fliers:imageURLS});
+  
 });
 
 

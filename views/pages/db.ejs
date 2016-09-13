@@ -42,7 +42,7 @@
 					<li class="collection-item">
 						<p id="eventTitle"><%= events[i].eventName %></span>
 						<p class="list-group-item-text"><%= events[i].organizationName %></p>
-						<p class="list-group-item-text"><%= events[i].dateAndTime.toString() %></p>
+						<p class="list-group-item-text"><%= events[i].dateAndTime.toDateString() %>, <%= events[i].dateAndTime.toLocaleTimeString() %></p>
 						<p class="list-group-item-text"><%= events[i].location %></p>
 						<% } %>
 					</a>
