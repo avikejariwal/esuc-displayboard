@@ -35,6 +35,13 @@
   </nav>
 
   <div class="row">
+  	<div class="col m6 l6">
+  		<div class="carousel carousel-slider" id="flierCarousel">
+				<% for (var i =0 ; i<fliers.length ; i++) {%>
+				<a class="carousel-item"><img class="flierImg" src = <%= fliers[i] %> ></a>
+				<% } %>
+			</div>
+  	</div>
   	<div class="col m4 l4">
   		<h4 id="eventInfoTitle">  Upcoming Events</h4>
 			<ul class="collection">
@@ -47,13 +54,6 @@
 						<% } %>
 					</a>
 			</ul>
-  	</div>
-  	<div class="col m8 l8">
-  		<div class="carousel carousel-slider" id="flierCarousel">
-				<% for (var i =0 ; i<fliers.length ; i++) {%>
-				<a class="carousel-item"><img class="flierImg" src = <%= fliers[i] %> ></a>
-				<% } %>
-			</div>
   	</div>
   </div>
 	<!-- <div >
