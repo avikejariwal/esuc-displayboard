@@ -11,12 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 	<link rel="stylesheet" type='text/css' href="/slick/slick.css" />
 	<link rel="stylesheet" type='text/css' href='/slick/slick-theme.css' />
-	 <!-- Compiled and minified Materialize CSS -->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
- 	 <!-- Compiled and minified Materialize JavaScript -->
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-          
+	<!-- Compiled and minified Materialize JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
 	<!--FIREBASE-->
 	<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 	<!--LOCAL JS-->
@@ -25,37 +25,47 @@
 </head>
 
 <body>	
-<nav>
-    <div class="nav-wrapper" id="dbHeader">
-    <div class="row">
-    <div class="col" id="navName1">Engineering Society</div>
-    <div class="col" id="navName2">University of California, Los Angeles</div>
-    </div>
-    </div>
-  </nav>
+	<nav>
+		<div class="nav-wrapper" id="dbHeader">
+			<div class="row">
+				<div class="col" id="navName1">Engineering Society</div>
+				<div class="col" id="navName2">University of California, Los Angeles</div>
+			</div>
+		</div>
+	</nav>
 
-  <div class="row">
-  	<div class="col m6 l6">
-  		<div class="carousel carousel-slider" id="flierCarousel">
+	<div class="row">
+		<div class="col m5 l5">
+			<div class="carousel carousel-slider" id="flierCarousel">
 				<% for (var i =0 ; i<fliers.length ; i++) {%>
 				<a class="carousel-item"><img class="flierImg" src = <%= fliers[i] %> ></a>
 				<% } %>
 			</div>
-  	</div>
-  	<div class="col m4 l4">
-  		<h4 id="eventInfoTitle">  Upcoming Events</h4>
-			<ul class="collection">
-					<% for (var i = 0; i<events.length; i++) { %>
-					<li class="collection-item">
-						<p id="eventTitle"><%= events[i].eventName %></span>
-						<p class="list-group-item-text"><%= events[i].organizationName %></p>
-						<p class="list-group-item-text"><%= events[i].dateAndTime.toDateString() %>, <%= events[i].dateAndTime.toLocaleTimeString() %></p>
-						<p class="list-group-item-text"><%= events[i].location %></p>
-						<% } %>
-					</a>
-			</ul>
-  	</div>
-  </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col m3 l3 eventInfoCarousel">
+		<h4 id="eventInfoTitle">  Upcoming Events</h4>
+			<div class="carousel carousel-slider center" data-indicators="true">
+
+
+			<% for (var i = 0; i<events.length; i++) { %>
+
+				<div class="carousel-item white black-text" href="#two!">
+					<h2><%= events[i].eventName %></h2>
+					<p class="black-text"><%= events[i].organizationName %></p>
+					<p class="black-text"><%= events[i].dateAndTime.toDateString() %>, <%= events[i].dateAndTime.toLocaleTimeString() %></p>
+					<p class="black-text"><%= events[i].location %></p>
+				</div>
+
+				<% } %>
+			</div>
+			
+
+
+				
+			</div>
+		</div>
 	<!-- <div >
 		<div class="eventInfoContainer">
 			

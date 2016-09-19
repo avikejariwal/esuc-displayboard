@@ -76,10 +76,12 @@ body {
 .collection-item{
   font-size: large;
 }
+.eventInfoCarousel .carousel {
+  height: 250px !important;
+}
 
 .carousel {
   margin-top:20px;
-  height: 800px !important;
 }
 #eventTitle{
   font-size: x-large;
@@ -91,7 +93,7 @@ p {
 
 .carousel .carousel-item img{
   width: auto !important;
-  max-height: 400px;
+  max-height: 550px;
 }
 
 
