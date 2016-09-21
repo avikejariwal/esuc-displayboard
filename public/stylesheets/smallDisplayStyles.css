@@ -1,0 +1,40 @@
+body {
+	height: 930px;
+	width: 900px;
+	border: 1px solid black;
+}
+
+nav {
+	background-color: #536895 !important; 
+	font-size: larger;
+	font-weight: 100;
+}
+.XXLFont {
+	font-size: xx-large;
+}
+.XLFont{
+	font-size: x-large;
+}
+
+.carousel .carousel-item img {
+    width: auto !important;
+    min-height:300px; 
+    max-height: 550px !important;
+}
+
+.carousel {
+	margin: 10px;
+}
+
+#eventsCards {
+	max-height: 300px
+}
+
+h6 {
+	font-weight: 500;
+	color: #536895;
+}
+
+.row {
+	margin-bottom: 0 !important;
+}

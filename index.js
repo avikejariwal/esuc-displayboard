@@ -55,7 +55,7 @@ app.get('/', function(request, response) {
         }
   		}
   	});
-    response.render('pages/db', {events: moderated_events, fliers:imageURLS});
+    response.render('pages/smallDisplay', {events: moderated_events, fliers:imageURLS});
   });
   
 });
