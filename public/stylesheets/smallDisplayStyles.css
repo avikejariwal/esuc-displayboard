@@ -16,12 +16,18 @@ nav {
 	font-size: x-large;
 }
 
-.carousel .carousel-item img {
-    width: auto !important;
-    min-height:300px; 
-    max-height: 550px !important;
+
+#carousel{
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 520px;
 }
 
+#carousel img{
+	min-height: 450px;
+	max-height: 520px;
+	width: auto;
+}
 .carousel {
 	margin: 10px;
 }
