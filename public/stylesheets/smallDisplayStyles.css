@@ -1,10 +1,11 @@
 body {
 	height: 930px;
 	width: 900px;
-	border: 1px solid black;
+	background-color: #536895 !important; 
 }
 
 nav {
+	color: gold;
 	background-color: #536895 !important; 
 	font-size: larger;
 	font-weight: 100;
@@ -33,7 +34,15 @@ nav {
 }
 
 #eventsCards {
-	max-height: 300px
+	max-width: 30%;
+	float: left;
+	font-size: larger;
+	padding:10px;
+	max-height: 300px;
+}
+#eventsCards h6{
+	font-size: xx-large;
+	color: gold !important;
 }
 
 h6 {

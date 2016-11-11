@@ -37,14 +37,10 @@
 		</div>
 		<div class="row" id="eventsCards">
 			<% for (var i = 0; i<events.length; i++) { %>
-			<div class="col l2">
-				<div class="card-panel white">
 						<h6><%= events[i].eventName %></h6>
-						<p class="black-text"><%= events[i].organizationName %></p>
-						<p class="black-text"><%= events[i].dateAndTime.toDateString() %>, <%= events[i].dateAndTime.toLocaleTimeString() %></p>
-						<p class="black-text"><%= events[i].location %></p>
-				</div>
-			</div>
+						<p class="white-text"><%= events[i].organizationName %></p>
+						<p class="white-text"><%= events[i].dateAndTime.toDateString() %>, <%= events[i].dateAndTime.toLocaleTimeString() %></p>
+						<p class="white-text"><%= events[i].location %></p>
 				<% } %>
 			
 		</div>
